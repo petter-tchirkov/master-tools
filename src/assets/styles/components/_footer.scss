@@ -1,0 +1,35 @@
+.footer{
+  background-color: $dark;
+  padding: 20px 0;
+  &-img{
+    img{
+      width: 100px;
+    }
+  }
+  &-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .f-contacts{
+    color: $light;
+    display: grid;
+    align-items: center;
+    h3{
+      display: grid;
+      align-self: end;
+    }
+    img{
+      width: 20px;
+    }
+    &-list{
+      display: grid;
+      align-items: center;
+      grid-template-columns: 20px 1fr;
+      grid-column-gap: 10px;
+    }
+  }
+  &-links{
+    display: grid;
+    place-items: center;
+  }
+}

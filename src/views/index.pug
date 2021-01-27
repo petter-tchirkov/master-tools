@@ -1,0 +1,106 @@
+extends ./layouts/master.pug
+
+block title
+  title Мастер Олег
+
+block manifestBrowserconfigFiles
+  link(href='../manifest.json', rel='manifest')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+  // Menu
+  +menu('home')
+
+  //- Desktop page
+  section.page.home-page#main
+    .wrapper
+      .page-container.container
+        h1.page-title СЕРВИС БЫТОВЫХ УСЛУГ 
+          br
+          | В УКРАИНЕ
+        .page-form
+          select.page-select
+            option(value="") Выберите услугу
+            option(value="") Телефоны
+            option(value="") Телефоны
+            option(value="") Телефоны
+          input.page-phone-input(type="tel" placeholder="Ваш номер телефона")
+          button.page-send-form заказать мастера
+        h2.page-subtitle Приедем в течении 3 часов, после Вашего обращения!
+          br
+          | Работаем по всем населенным пунктам Украины.
+  section.services#services
+    .services-container.container
+      h2.services-title Наши Услуги
+      .services-list
+        .services-item
+          img(src="/assets/images/smartphone.svg", alt="")
+          h3 Телефоны
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae impedit ipsam labore reiciendis voluptatem inventore provident unde aspernatur aperiam corrupti!
+        .services-item
+          img(src="/assets/images/computer.svg", alt="")
+          h3 Компьютеры
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae molestias cupiditate harum unde quam inventore adipisci voluptatibus, quisquam et pariatur!
+        .services-item
+          img(src="/assets/images/washing-machine.svg", alt="")
+          h3 Стиральные машины
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum porro ullam, assumenda atque amet nihil esse sint dolores laboriosam blanditiis?
+        .services-item
+          img(src="/assets/images/oven.svg", alt="")
+          h3 Плиты
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolores corrupti nobis numquam, necessitatibus obcaecati voluptatibus amet explicabo molestias unde?
+        .services-item
+          img(src="/assets/images/fridge.svg", alt="")
+          h3 Холодильники
+          p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae fuga architecto consectetur inventore consequatur dolor ad dolorum praesentium quas reprehenderit?
+        .services-item
+          img(src="/assets/images/boiler.svg", alt="")
+          h3 Бойлеры
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident officia, maiores inventore aspernatur incidunt ut reiciendis alias ex sapiente minus!
+      .services-cta
+        h3 не нашли нужную услугу?
+        p Звоните и мы подберём вам мастера!
+        span (067) 440 1231
+  .workflow#workflow
+    .workflow-container.container
+      h2.workflow-title как мы работаем?
+      .workflow-list
+        .workflow-item
+          img(src="/assets/images/blank-folded-page.svg", alt="")
+          h4 Создайте задание
+          p Опишите что и когда нужно сделать
+        .workflow-item
+          img(src="/assets/images/builder.svg", alt="")
+          h4 Выберите специалиста
+          p Выберите компетентного кандидата для вашего задания
+        .workflow-item
+          img(src="/assets/images/notepad.svg", alt="")
+          h4 Закройте заявку
+          p Оставьте отзыв и оцените специалиста
+  .advantages#advantages
+    .advantages-contaienr.container
+      h2.advantages-title наши примущества
+      .advantages-list
+        .advantages-item
+          img(src="/assets/images/ribbon.svg", alt="")
+          p Приоритет на качество и безопасность
+        .advantages-item
+          img(src="/assets/images/support.svg", alt="")
+          p Моментальная реакция на обращение
+        .advantages-item
+          img(src="/assets/images/plumber.svg", alt="")
+          p Мастера доступны 24/7
+        .advantages-item
+          img(src="/assets/images/setting.svg", alt="")
+          p Широкая сфера оказываемых услуг
+        .advantages-item
+          img(src="/assets/images/crm.svg", alt="")
+          p Более 100 тысяч активных клиентов
+        .advantages-item
+          img(src="/assets/images/insurance.svg", alt="")
+          p Страховка до 1000грн
+      .advantages-cta Хотите узнать стоимость ремонта?
+        br
+        | Звоните прямо сейчас
+        span (067) 440 1231

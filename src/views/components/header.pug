@@ -1,0 +1,31 @@
+header.header
+  .header-container.container
+    .header-logo
+      img(src="/assets/images/wrench.svg", alt="")
+    .header-region
+      select.region-select
+        option(value="" default) Выберите область
+        option(value="") Киевская
+        option(value="") Днепропетровская
+        option(value="") Одесская
+    .header-contacts
+      img(src="/assets/images/smartphone.svg", alt="" class="contacts-phone-img")
+      .contacts-phone
+        span +38 (067) 440 1231
+      .contacts-info
+        span Звоните 24 часа, без выходных
+    .header-btn
+      div
+        span
+        span
+        span
+  .header-sidebar.sidebar
+    ul.sidebar-list
+      li.sidebar-item
+        a(href="/#services") услуги
+      li.sidebar-item
+        a(href="/#workflow") как мы работаем
+      li.sidebar-item
+        a(href="/#advantages") преимущества
+      li.sidebar-item
+        a(href="/#main") главная

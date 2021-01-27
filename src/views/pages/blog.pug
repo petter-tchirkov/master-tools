@@ -1,0 +1,100 @@
+extends ../layouts/master.pug
+
+block title
+  title My Page - Contact
+
+block basicSeo
+  meta(name='description' content='Contact page')
+  meta(name='keywords', content='contact, page')
+  meta(name='author' content='')
+
+block manifestBrowserconfigFiles
+  link(href='../manifest.json', rel='manifest')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+  // Menu
+  +menu('contact')
+
+  //- Desktop page
+  section.s-page
+    h1.s-page-title Какие услуги мы оказываем
+    .s-content.phones
+      .phones-container.container
+        h2.phone-title.serv-title Ремонт телефонов
+        .s-list
+          .s-content-list
+            .content-list-item
+              img(src="/assets/images/services/loop.svg", alt="")
+              span Диагностика неполадок
+            .content-list-item
+              img(src="/assets/images/services/maintenance.svg", alt="")
+              span Техническое обслуживание
+            .content-list-item
+              img(src="/assets/images/services/repair.svg", alt="")
+              span Ремонт любой сложности
+          .s-content-img
+            img(src="/assets/images/services/phone.png", alt="")
+    .s-content.computers
+      .computers-container.container
+        h2.phone-title.serv-title Ремонт компьютеров
+        .s-list
+          .s-content-list
+            .content-list-item
+              img(src="/assets/images/services/loop.svg", alt="")
+              span Диагностика неполадок
+            .content-list-item
+              img(src="/assets/images/services/maintenance.svg", alt="")
+              span Техническое обслуживание
+            .content-list-item
+              img(src="/assets/images/services/computer.svg", alt="")
+              span Сборка с нуля
+            .content-list-item
+              img(src="/assets/images/services/repair.svg", alt="")
+              span Ремонт любой сложности
+            .content-list-item
+              img(src="/assets/images/services/cleaning.svg", alt="")
+              span Чистка от пыли
+          .s-content-img
+            img(src="/assets/images/services/pc.png", alt="")
+    .s-content.fridge
+      .fridge-container.container
+        h2.fridge-title.serv-title Ремонт холодильников
+        .s-list
+          .s-content-list
+            .content-list-item
+              img(src="/assets/images/services/loop.svg", alt="")
+              span Диагностика неполадок
+            .content-list-item
+              img(src="/assets/images/services/maintenance.svg", alt="")
+              span Техническое обслуживание
+            .content-list-item
+              img(src="/assets/images/services/ice.svg", alt="")
+              span Замена фриона
+            .content-list-item
+              img(src="/assets/images/services/repair.svg", alt="")
+              span Ремонт любой сложности
+          .s-content-img
+            img(src="/assets/images/services/fridge.png", alt="")
+    .s-content.washing-machine
+      .washing-machine-container.container
+        h2.washing-machine-title.serv-title Ремонт стиральных машин
+        .s-list
+          .s-content-list
+            .content-list-item
+              img(src="/assets/images/services/loop.svg", alt="")
+              span Диагностика неполадок
+            .content-list-item
+              img(src="/assets/images/services/maintenance.svg", alt="")
+              span Техническое обслуживание
+            .content-list-item
+              img(src="/assets/images/services/ice.svg", alt="")
+              span Замена фриона
+            .content-list-item
+              img(src="/assets/images/services/repair.svg", alt="")
+              span Ремонт любой сложности
+          .s-content-img
+            img(src="/assets/images/services/washing-machine.png", alt="")
+            
+

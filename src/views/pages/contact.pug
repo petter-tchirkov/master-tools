@@ -1,0 +1,38 @@
+extends ../layouts/master.pug
+
+block title
+  title My Page - Contact
+
+block basicSeo
+  meta(name='description' content='Contact page')
+  meta(name='keywords', content='contact, page')
+  meta(name='author' content='')
+
+block manifestBrowserconfigFiles
+  link(href='../manifest.json', rel='manifest')
+  meta(name='msapplication-config' content='../browserconfig.xml')
+
+block content
+
+  // Menu
+  +menu('contact')
+
+  //- Desktop page
+  section.c-page
+    .c-page-container.container
+      h1.c-page-title как с нами связаться
+        h2.c-page-subtitle Оставьте свой телефон, 
+          br
+          | мы перезвоним вам в течение 10 минут
+        form.c-page-form
+          input.c-page-input(type="text" placeholder="Ваш телефон")
+          input.c-page-input(type="text" placeholder="Как к вам обращаться")
+          select.c-page-select
+            option(value="") Ремонт телефона
+            option(value="") Ремонт компьютера
+            option(value="") Ремонт стиральной машины
+            option(value="") Ремонт холодильника
+          input.c-page-textarea(type="textarea" placeholder="Опишите проблему")
+          button.c-page-submit Отправить
+
+

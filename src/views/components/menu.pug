@@ -1,0 +1,9 @@
+mixin menu(currentPage)
+  nav.menu
+    ul.menu__ul.ml-auto
+      li.menu__item
+        a.menu__link(href='/', class=currentPage === 'home' ? 'active' : '') Главная
+      li.menu__item
+        a.menu__link(href='/blog', class=currentPage === 'services' ? 'active' : '') Услуги
+      li.menu__item
+        a.menu__link(href='/contact', class=currentPage === 'contacts' ? 'active' : '') Контакты
