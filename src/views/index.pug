@@ -16,6 +16,9 @@ block content
   section.page.home-page#main
     .wrapper
       .page-container.container
+        .page-phones
+          span.page-phone-cta +38 063 764 28 76
+          span.page-phone-cta +38 095 461 34 68
         h1.page-title СЕРВИС БЫТОВЫХ УСЛУГ 
           br
           | В УКРАИНЕ
@@ -23,8 +26,10 @@ block content
           select.page-select
             option(value="") Выберите услугу
             option(value="") Телефоны
-            option(value="") Телефоны
-            option(value="") Телефоны
+            option(value="") Компьютеры
+            option(value="") Стиральные машины
+            option(value="") Телевизоры
+            option(value="") Строительные работы
           input.page-phone-input(type="tel" placeholder="Ваш номер телефона")
           button.page-send-form заказать мастера
         h2.page-subtitle Приедем в течении 3 часов, после Вашего обращения!
@@ -35,44 +40,66 @@ block content
       h2.services-title Наши Услуги
       .services-list
         .services-item
-          img(src="/assets/images/smartphone.svg", alt="")
-          h3 Телефоны
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae impedit ipsam labore reiciendis voluptatem inventore provident unde aspernatur aperiam corrupti!
+          a(href="/blog#tv")
+            img(src="/assets/images/tv.svg", alt="")
+            h3 Телевизоры
+            p Комплексный спектр услуг по ремонту ламповых (кинескопных), LCD телевизоров, а также плазменных панелей всех известных марок с гарантией от 6 до 12 месяцев.
         .services-item
-          img(src="/assets/images/computer.svg", alt="")
-          h3 Компьютеры
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae molestias cupiditate harum unde quam inventore adipisci voluptatibus, quisquam et pariatur!
+          a(href="/blog#computers") 
+            img(src="/assets/images/computer.svg", alt="")
+            h3 Компьютеры
+            p Ремонт как внутренних комплектующих, так и установка различного типа программного обеспечения, чистка ноутбуков и ПК на дому! Гарантия от 8 до 12 месяцев!
         .services-item
-          img(src="/assets/images/washing-machine.svg", alt="")
-          h3 Стиральные машины
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum porro ullam, assumenda atque amet nihil esse sint dolores laboriosam blanditiis?
+          a(href="/blog#fridge")
+            img(src="/assets/images/fridge.svg", alt="")
+            h3 Холодильники
+            p Квалифицированный ремонт бытовых и промышленных холодильных камер любых моделей и торговых марок по разумным ценам. На выполненные работы предоставляется гарантия от 6 до 12 месяцев.
         .services-item
-          img(src="/assets/images/oven.svg", alt="")
-          h3 Плиты
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolores corrupti nobis numquam, necessitatibus obcaecati voluptatibus amet explicabo molestias unde?
+          a(href="/blog#conditioners")
+            img(src="/assets/images/air-conditioner.svg", alt="")
+            h3 Кондиционеры
+            p Комплексный ремонт и сервисное обслуживание промышленных и домашних кондиционеров различных производителей с гарантией качества от 5 до 12 месяцев!
         .services-item
-          img(src="/assets/images/fridge.svg", alt="")
-          h3 Холодильники
-          p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae fuga architecto consectetur inventore consequatur dolor ad dolorum praesentium quas reprehenderit?
+          a(href="/blog#boilers")
+            img(src="/assets/images/boiler.svg", alt="")
+            h3 Бойлеры
+            p Ремонт бойлеров любой сложности: чистка и замена деталей,  любых производителей с гарантией 6-12 месяцев!
         .services-item
-          img(src="/assets/images/boiler.svg", alt="")
-          h3 Бойлеры
-          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident officia, maiores inventore aspernatur incidunt ut reiciendis alias ex sapiente minus!
+          a(href="/blog#washing-machine")
+            img(src="/assets/images/washing-machine.svg", alt="")
+            h3 Стиральные машины
+            p Сервисное обслуживание и устранение любых поломок стиральных машинок автомат и полуавтомат, горизонтальной и вертикальной загрузки. Отечественного и импортного производства. Гарантия 1 год.
+        .services-item
+          a(href="/blog#building")
+            img(src="/assets/images/sketch.svg", alt="")
+            h3 Строительные работы
+            p Сервисное обслуживание и устранение любых поломок стиральных машинок автомат и полуавтомат, горизонтальной и вертикальной загрузки. Отечественного и импортного производства. Гарантия 1 год.
+        .services-item
+          a(href="/blog#electrician")
+            img(src="/assets/images/electrician.svg", alt="")
+            h3 Услуги электрика
+            p Электромонтажные работы любой сложности. Ремонт, замена и монтаж электропроводки, фурнитуры (розетки, выключатели), освещения, элементов щитка распределительного, а также другие виды работ по реанимации и модернизации электрических сетей и элементов Вашего помещения (Квартиры, Дома, Офиса и др.).
+        .services-item
+          a(href="/blog#transport")
+            img(src="/assets/images/truck.svg", alt="")
+            h3 Грузоперевозки
+            p Если вам нужно перевезти личные вещи, или стройматериалы? Это к нам, впечатлительные размеры и чистота машин за скромные цены, вас приятно удивят. Каждый автомобиль оборудован крепежными ремнями, упаковочным материалом, и главное опытные грузчики и пунктуальные водители не заставят вас ждать автомобиль !
       .services-cta
         h3 не нашли нужную услугу?
         p Звоните и мы подберём вам мастера!
-        span (067) 440 1231
+        span +38 063 764 28 76
+        span +38 095 461 34 68
   .workflow#workflow
     .workflow-container.container
       h2.workflow-title как мы работаем?
       .workflow-list
         .workflow-item
           img(src="/assets/images/blank-folded-page.svg", alt="")
-          h4 Создайте задание
+          h4 Свяжитесь с нами
           p Опишите что и когда нужно сделать
         .workflow-item
           img(src="/assets/images/builder.svg", alt="")
-          h4 Выберите специалиста
+          h4 Мастер связывается с вами
           p Выберите компетентного кандидата для вашего задания
         .workflow-item
           img(src="/assets/images/notepad.svg", alt="")
@@ -98,9 +125,10 @@ block content
           img(src="/assets/images/crm.svg", alt="")
           p Более 100 тысяч активных клиентов
         .advantages-item
-          img(src="/assets/images/insurance.svg", alt="")
-          p Страховка до 1000грн
+          img(src="/assets/images/price.svg", alt="")
+          p Самая доступная цена на рынке
       .advantages-cta Хотите узнать стоимость ремонта?
         br
         | Звоните прямо сейчас
-        span (067) 440 1231
+        span +38 063 764 28 76
+        span +38 095 461 34 68

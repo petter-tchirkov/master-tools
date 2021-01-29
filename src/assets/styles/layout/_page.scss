@@ -5,10 +5,20 @@
     padding-top: 250px;
     padding-bottom: 50px;
   }
+  .page-phones{
+  }
+  &-phone-cta{
+    font-size: 48px;
+    color: $yellow;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    margin-bottom: 50px;
+  }
   &-title{
     text-align: center;
     margin-bottom: 50px;
-    color: $light;
+    color: $yellow;
     font-size: 48px;
   }
   &-form{
@@ -17,6 +27,10 @@
     grid-column-gap: 20px;
     padding: 0 200px;
     margin-bottom: 50px;
+    select, input, button{
+      border: transparent;
+      border-radius: 10px;
+    }
   }
   &-select{
     height: 56px;
@@ -55,7 +69,7 @@
   }
   &-subtitle{
     text-align: center;
-    color: $yellow;
+    color: $light;
     font-size: 36px;
   }
 }
@@ -87,20 +101,26 @@
   }
   &-list{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 50px;
   }
   &-item{
-    display: grid;
-    place-items: center;
-    grid-template-rows: 50px 1fr 1fr;
-    border-radius: 10px;
-    background-color: $light;
-    padding: 10px;
-    cursor: pointer;
-    margin-bottom: 50px;
-    img{
-      width: 50px;
+    a{
+      display: grid;
+      place-items: center;
+      grid-template-rows: 50px auto 1fr;
+      border-radius: 10px;
+      background-color: $light;
+      padding: 10px;
+      cursor: pointer;
+      img{
+        width: 50px;
+      }
+      h3, p{
+        color: $dark;
+        text-align: center;
+      }
     }
   }
   &-cta{
@@ -117,7 +137,7 @@
     span{
       display: block;
       text-align: center;
-      font-size: 24px;
+      font-size: 48px;
     }
   }
 }
@@ -214,7 +234,7 @@
       padding-top: 20px;
       font-weight: 500;
       display: block;
-      font-size: 24px;
+      font-size: 48px;
     }
   }
 }
