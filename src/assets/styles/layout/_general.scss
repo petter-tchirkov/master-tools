@@ -8,7 +8,16 @@ html,
 body {
   height: 100%;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.container{
+  margin: 0 auto;
+  padding: 0;  
+}
 
 body {
   font-family: $quicksand;
@@ -31,24 +40,4 @@ ul {
 }
 li {
   list-style: none;
-}
-
-.container{
-  max-width: $desktop;
-  margin: 0 auto;
-}
-@media screen and(max-width: $desktop) {
-  .container{
-    max-width: 960px;
-  }
-}
-@media screen and(max-width: $tablet) {
-  .container{
-    max-width: 780px;
-  }
-}
-@media screen and(max-width: $mobile) {
-  .container{
-    max-width: 760px;
-  }
 }

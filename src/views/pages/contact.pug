@@ -18,21 +18,26 @@ block content
   +menu('contact')
 
   //- Desktop page
-  section.c-page
-    .c-page-container.container
-      h1.c-page-title как с нами связаться
-        h2.c-page-subtitle Оставьте свой телефон, 
-          br
-          | мы перезвоним вам в течение 10 минут
-        form.c-page-form
-          input.c-page-input(type="text" placeholder="Ваш телефон")
-          input.c-page-input(type="text" placeholder="Как к вам обращаться")
-          select.c-page-select
-            option(value="") Ремонт телефона
-            option(value="") Ремонт компьютера
-            option(value="") Ремонт стиральной машины
-            option(value="") Ремонт холодильника
-          input.c-page-textarea(type="textarea" placeholder="Опишите проблему")
-          button.c-page-submit Отправить
+  .contact-page
+    .contact-page__container.container
+      h2.contact-page__title СВЯЖИЕТСЬ С НАМИ
+      h3.contact-page__subtitle Оставьте свой телефон, мы перезвоним вам в течение 10 минут
+      form.contact-page__form(action="")
+        input.contact-page__input(type="text" placeholder="Ваш номер телефона")
+        input.contact-page__input(type="text" placeholder="Как к вам обращаться")
+        select(name="service-select" class="contact-page__select")
+          option(value="1") Ремонт телевизоров
+          option(value="2") Ремонт компьютеров
+          option(value="3") Ремонт холодильников
+          option(value="4") Ремонт кондиционеров 
+          option(value="5") Ремонт стиральных машин
+          option(value="6") Ремонт бойлеров
+          option(value="7") Строительные работы
+          option(value="8") Услуги электрика
+          option(value="9") Грузоперевозки
+        input(type="textarea" class="contact-page__textarea")
+        input(type="submit" class="contact-page__submit" value="Отправить")
+        
+
 
 

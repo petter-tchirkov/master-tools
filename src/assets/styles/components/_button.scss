@@ -5,13 +5,4 @@
   background: none;
 }
 
-.button {
-  @extend .clean-button;
-  font-family: $quicksand;
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 5px;
-  color: white;
-  padding: 14px 40px;
-  background: $yellow;
-}
+
