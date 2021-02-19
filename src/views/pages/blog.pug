@@ -1,7 +1,7 @@
 extends ../layouts/master.pug
 
 block title
-  title My Page - Contact
+  title Услуги мастеров
 
 block basicSeo
   meta(name='description' content='Contact page')
@@ -21,7 +21,7 @@ block content
   .serv-page
     .serv-page__container.container
       h2.serv-page__title КАКИЕ УСЛУГИ МЫ ОКАЗЫВАЕМ
-      .serv-page__item
+      .serv-page__item#tv
         .serv-page__info
           h3 Ремонт телевизоров
           ul.serv-page__services
@@ -41,12 +41,12 @@ block content
               p Ремонт тюнеров
               span от 300 грн
         .serv-page__image
-          img(src="./assets/images/tv.png", alt="")
+          img(src="/assets/images/tv.png", alt="")
         .serv-page__cta
           button Оформить заявку
-      .serv-page__item
+      .serv-page__item#pc
         .serv-page__image
-          img(src="./assets/images/pc.png", alt="")
+          img(src="/assets/images/pc.png", alt="")
         .serv-page__info
           h3 Ремонт компьютеров
           ul.serv-page__services
@@ -64,7 +64,7 @@ block content
               span от 200 грн
         .serv-page__cta
           button Оформить заявку
-      .serv-page__item
+      .serv-page__item#fridge
         .serv-page__info
           h3 Ремонт холодильников
           ul.serv-page__services
@@ -84,12 +84,12 @@ block content
               p Диагностика в случае ремонта
               span бесплатно!
         .serv-page__image
-          img(src="./assets/images/fridge.png", alt="")
+          img(src="/assets/images/fridge.png", alt="")
         .serv-page__cta
           button Оформить заявку
-      .serv-page__item
+      .serv-page__item#conditioner
         .serv-page__image
-          img(src="./assets/images/conditioner.png", alt="")
+          img(src="/assets/images/conditioner.png", alt="")
         .serv-page__info
           h3 Ремонт кондиционеров 
           ul.serv-page__services
@@ -107,7 +107,7 @@ block content
               span от 500 грн
         .serv-page__cta
           button Оформить заявку
-      .serv-page__item
+      .serv-page__item#washing-machine
         .serv-page__info
           h3 Ремонт стиральных машин
           ul.serv-page__services
@@ -127,12 +127,12 @@ block content
               p Диагностика в случае ремонта
               span бесплатно!
         .serv-page__image
-          img(src="./assets/images/washing-machine.png", alt="")
+          img(src="/assets/images/washing-machine.png", alt="")
         .serv-page__cta
           button Оформить заявку
-      .serv-page__item
+      .serv-page__item#boiler
         .serv-page__image
-          img(src="./assets/images/boiler.png", alt="")
+          img(src="/assets/images/boiler.png", alt="")
         .serv-page__info
           h3 Ремонт бойлеров
           ul.serv-page__services
@@ -150,7 +150,7 @@ block content
               span от 200 грн
         .serv-page__cta
           button Оформить заявку
-      .serv-page__item
+      .serv-page__item#building
         .serv-page__info
           h3 Строительные работы
           ul.serv-page__services
@@ -170,12 +170,12 @@ block content
               p Диагностика в случае ремонта
               span бесплатно!
         .serv-page__image
-          img(src="./assets/images/building.png", alt="")
+          img(src="/assets/images/building.png", alt="")
         .serv-page__cta
           button Оформить заявку
-      .serv-page__item
+      .serv-page__item#electrician
         .serv-page__image
-          img(src="./assets/images/electrician.png", alt="")
+          img(src="/assets/images/electrician.png", alt="")
         .serv-page__info
           h3 Услуги электрика
           ul.serv-page__services
@@ -193,7 +193,7 @@ block content
               span от 300 грн
         .serv-page__cta
           button Оформить заявку
-      .serv-page__item
+      .serv-page__item#transport
         .serv-page__info
           h3 Грузоперевозки
           ul.serv-page__services
@@ -204,6 +204,6 @@ block content
               p Помощь грузчиков
               span от 100 грн / час
         .serv-page__image
-          img(src="./assets/images/transport.png", alt="")
+          img(src="/assets/images/transport.png", alt="")
         .serv-page__cta
           button Оформить заявку

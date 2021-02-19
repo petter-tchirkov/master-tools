@@ -7,16 +7,24 @@ $(function() {
   require('scripts/demo');
 })
 
-function sendEmail(){
-  Email.send({
-    Host : "smtp.yourisp.com",
-    Username : "username",
-    Password : "password",
-    To : 'them@website.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-  }).then(
-  message => alert(message)
-  );
-}
+
+//E-mail Ajax Send
+$(".contact-page__form, .main__form").submit(function() { //Change
+  var th = $(this);
+  $.ajax({
+    type: "POST",
+    url: "mail.php", //Change
+    data: th.serialize()
+  }).done(function() {
+    setTimeout(function() {
+      // Done Functions
+      th.trigger("reset");
+    }, 1000);
+  });
+  return false;
+});
+
+
+
+
+

@@ -24,18 +24,23 @@ block content
           | Приедем в течении 3-х часов, после Вашего обращения!
           br
           | Работаем по всем населенным пунктам Украины
-        form.main__form(action='')
+        form.main__form(action='/mail.php')
+          // Hidden Required Fields
+          input(type='hidden' name='project_name' value='Мастер на все руки')
+          input(type='hidden' name='admin_email' value='info@master-na-vse-ruki.com.ua')
+          input(type='hidden' name='form_subject' value='Главная')
+          // END Hidden Required Fields
           select#service.form__select(name='service')
-            option(value='1') Ремонт телевизоров
-            option(value='2') Ремонт компьютеров
-            option(value='3') Ремонт холодильников
-            option(value='4') Ремонт кондиционеров 
-            option(value='5') Ремонт стиральных машин
-            option(value='6') Ремонт бойлеров
-            option(value='7') Строительные работы
-            option(value='8') Услуги электрика
-            option(value='9') Грузоперевозки
-          input.form__input(type='text' placeholder='Ваш номер телефона')
+            option(value="Ремонт телевизоров") Ремонт телевизоров
+            option(value="Ремонт компьютеров") Ремонт компьютеров
+            option(value="Ремонт холодильников") Ремонт холодильников
+            option(value="Ремонт кондиционеров ") Ремонт кондиционеров 
+            option(value="Ремонт стиральных машин") Ремонт стиральных машин
+            option(value="Ремонт бойлеров") Ремонт бойлеров
+            option(value="Строительные работы") Строительные работы
+            option(value="Услуги электрика") Услуги электрика
+            option(value="Грузоперевозки") Грузоперевозки
+          input.form__input(type='text' name="phone" placeholder='Ваш номер телефона')
           input.form__submit(type='submit' value='Вызвать мастера')
   section.services
     .services__container.container
@@ -44,56 +49,56 @@ block content
         h2 Услуги
         hr
       ul.services__list
-        a(href='')
+        a(href='/blog#tv')
           .services__item
             img.item__logo(src='/assets/images/tv.svg' alt='')
             h3.item__name Телевизоры
             p.item__brief
               | Комплексный спектр услуг по ремонту ламповых (кинескопных), LCD телевизоров, а также плазменных панелей всех известных марок с гарантией
               | от 6 до 12 месяцев
-        a(href='')
+        a(href='/blog#pc')
           .services__item
             img.item__logo(src='/assets/images/pc.svg' alt='')
             h3.item__name Компьютеры
             p.item__brief
               | Ремонт как внутренних комплектующих, так и установка различного типа программного обеспечения, чистка ноутбуков и ПК на дому! Гарантия от 8 до 12 месяцев!
-        a(href='')
+        a(href='/blog#fridge')
           .services__item
             img.item__logo(src='/assets/images/fridge.svg' alt='')
             h3.item__name Холодильники
             p.item__brief
               | Квалифицированный ремонт бытовых и промышленных холодильных камер любых моделей и торговых марок по разумным ценам. На выполненные работы предоставляется гарантия от 6 до 12 месяцев.
-        a(href='')
+        a(href='/blog#conditioner')
           .services__item
             img.item__logo(src='/assets/images/conditioner.svg' alt='')
             h3.item__name Кондиционеры
             p.item__brief
               | Комплексный ремонт и сервисное обслуживание промышленных и домашних кондиционеров различных производителей с гарантией качества от 5 до 12 месяцев!
-        a(href='')
+        a(href='/blog#boiler')
           .services__item
             img.item__logo(src='/assets/images/boiler.svg' alt='')
             h3.item__name Бойлеры
             p.item__brief
               | Ремонт бойлеров любой сложности: чистка и замена деталей, любых производителей с гарантией 6-12 месяцев!
-        a(href='')
+        a(href='/blog#washing-machine')
           .services__item
             img.item__logo(src='/assets/images/washing-machine.svg' alt='')
             h3.item__name Стиральные машины
             p.item__brief
               | Сервисное обслуживание и устранение любых поломок стиральных машинок автомат и полуавтомат, горизонтальной и вертикальной загрузки. Отечественного и импортного производства. Гарантия 1 год.
-        a(href='')
+        a(href='/blog#building')
           .services__item
             img.item__logo(src='/assets/images/building.svg' alt='')
             h3.item__name Строительные работы
             p.item__brief
               | Сервисное обслуживание и устранение любых поломок стиральных машинок автомат и полуавтомат, горизонтальной и вертикальной загрузки. Отечественного и импортного производства. Гарантия 1 год.
-        a(href='')
+        a(href='/blog#electrician')
           .services__item
             img.item__logo(src='/assets/images/electrician.svg' alt='')
             h3.item__name Услуги электрика
             p.item__brief
               | Электромонтажные работы любой сложности. Ремонт, замена и монтаж электропроводки, фурнитуры (розетки, выключатели), освещения, элементов щитка распределительного, а также другие виды работ по реанимации и модернизации электрических сетей и элементов Вашего помещения (Квартиры, Дома, Офиса и др.)
-        a(href='')
+        a(href='/blog#transport')
           .services__item
             img.item__logo(src='/assets/images/transport.svg' alt='')
             h3.item__name Грузоперевозки

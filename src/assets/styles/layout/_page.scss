@@ -1,8 +1,9 @@
 .main{
-  background: url('/assets/images/bg.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/bg.png');
+  // background: url('/assets/images/bg.png');
   &__wrapper{
-    background-color: #000;
-    opacity: 0.7;
+    // background-color: #000;
+    // opacity: 0.7;
     padding-top: 92px;
     padding-bottom: 193px;
   }
@@ -42,7 +43,7 @@
         font-weight: 500;
       }
       &:focus{
-        border: transparent;
+        border: 2px solid $orange;
       }
     }
     .form__submit{
@@ -96,6 +97,10 @@
     box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
     grid-template-rows: auto 1fr;
+    transition: 0.3s;
+    &:hover{
+      border: 2px solid $orange;
+    }
     h3{
       color: #000;
       font-weight: 500;
